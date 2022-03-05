@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'meanstack-projects';
+ posts=[];
+ onPostAdded(post){
+  this.posts.push(post);
+ }
 }
